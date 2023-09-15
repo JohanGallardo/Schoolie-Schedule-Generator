@@ -1,0 +1,27 @@
+<h2 class="text-center">All Courses<h2>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope ="col">Course Name</th>
+    <th scope ="col">Course Number</th>
+    <th scope ="col">Year</th>
+    <th scope ="col">Semester</th>
+    <th scope ="col">Professor</th>
+    <th scope ="col">Days</th>
+    <th scope ="col">Time</th>
+  </tr>
+  </thead>
+<tbody>
+{{#each course}} 
+<tr>
+    <td>{{courseName}}</td>
+    <td>{{courseNumber}}</td>
+    <td>{{year}}</td>
+    <td>{{semester}}</td>
+    <td>{{professor}}</td>
+    <td>{{daysString}}</td>
+    <td>{{startString}} - {{endString}}</td>
+</tr>
+{{/each}} 
+</tbody>
+</table>

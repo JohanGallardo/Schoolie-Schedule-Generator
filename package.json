@@ -1,0 +1,33 @@
+{
+  "name": "final-project-johangallardo",
+  "version": "1.0.0",
+  "description": "## Overview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nyu-csci-ua-0467-001-002-spring-2023/final-project-JohanGallardo.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/final-project-JohanGallardo/issues"
+  },
+  "homepage": "https://github.com/nyu-csci-ua-0467-001-002-spring-2023/final-project-JohanGallardo#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.0",
+    "bcryptjs": "^2.4.3",
+    "eslint-plugin-mocha": "^10.1.0",
+    "express": "^4.18.2",
+    "express-flash": "^0.0.2",
+    "express-session": "^1.17.3",
+    "hbs": "^4.2.0",
+    "mongo-sanitize": "^1.1.0",
+    "mongoose": "^7.0.3",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {}
+}

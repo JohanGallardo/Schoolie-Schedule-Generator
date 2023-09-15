@@ -1,0 +1,27 @@
+<h2>Favorite Schedules<h2>
+{{#each schedules}}
+<h2>Schedule</h2>
+<table>
+  <tr>
+    <th>Course Name</th>
+    <th>Course Number</th>
+    <th>Year</th>
+    <th>Semester</th>
+    <th>Professor</th>
+    <th>Days</th>
+    <th>Time</th>
+  </tr>
+{{#each schedule}} 
+<tr>
+    <td>{{courseName}}</td>
+    <td>{{courseNumber}}</td>
+    <td>{{year}}</td>
+    <td>{{semester}}</td>
+    <td>{{professor}}</td>
+    <td>{{daysString}}</td>
+    <td>{{startString}} - {{endString}}</td>
+</tr>
+{{/each}}
+</table> 
+{{/each}}
+

@@ -1,0 +1,31 @@
+<h2>Generated Schedule<h2>
+<table>
+  <tr>
+    <th>Course Name</th>
+    <th>Course Number</th>
+    <th>Year</th>
+    <th>Semester</th>
+    <th>Professor</th>
+    <th>Days</th>
+    <th>Time</th>
+  </tr>
+{{#each schedule}} 
+<tr>
+    <td>{{courseName}}</td>
+    <td>{{courseNumber}}</td>
+    <td>{{year}}</td>
+    <td>{{semester}}</td>
+    <td>{{professor}}</td>
+    <td>{{daysString}}</td>
+    <td>{{startString}} - {{endString}}</td>
+</tr>
+{{/each}} 
+</table>
+
+<form method = "POST" action = "/schedules/favorite">
+<input type="hidden" value ="{{_id}}" name = "schedId">
+<label for="submit">Add to favorites</label>
+<input type = "submit" name = "" value = "❤️">
+</form>
+
+<a href="/schedule/generate">Or Re-generate</a>

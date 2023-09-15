@@ -1,0 +1,46 @@
+<div id ="addCourse">
+    <h2>Add a Course</h2>
+
+    <form method = "POST" action = "/course/add">
+        <label for="courseName">Course Name:</label> 
+        <input type ="text" id = "courseName" name ="courseName"><br>
+
+        <label for="courseNumber">Course Number:</label>
+        <input type ="text" id = "courseNumber" name ="courseNumber"> <br>
+    
+        <label for="year">Year:</label>
+        <input type ="text" id = "year" name ="year"> <br>
+
+        <label for="semester">Semester:</label>
+        <select id="semester" name="semester">
+            <option value="Winter">Winter</option>
+            <option value="Fall">Fall</option>
+            <option value="Spring">Spring</option>
+            <option value="Summer">Summer</option>
+        </select><br>
+
+
+        <label for="professor">Professor:</label>
+        <input type ="text" id = "professor" name ="professor"><br>
+
+        <input type="checkbox" id="monday" name="monday" value="monday">
+        <label for="vehicle1"> Mon</label>
+        <input type="checkbox" id="tuesday" name="tuesday" value="tuesday">
+        <label for="vehicle1"> Tu</label>
+        <input type="checkbox" id="wednesday" name="wednesday" value="wednesday">
+        <label for="vehicle1"> Wed</label>
+        <input type="checkbox" id="thursday" name="thursday" value="thursday">
+        <label for="vehicle1"> Thu</label>
+        <input type="checkbox" id="friday" name="friday" value="friday">
+        <label for="vehicle1"> Fri</label><br>
+            
+        <label for="startTime">Start time: </label>
+        <input type="time" id="startTime" name ="startTime" /><br>
+
+        <label for="endTime">End time: </label>
+        <input type="time" id="endTime" name = "endTime" /><br>
+
+        <input type = "submit" name = "" class = "btn btn-primary" value = "Submit">
+
+    </form>
+    </div>

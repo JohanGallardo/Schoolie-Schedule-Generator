@@ -1,0 +1,16 @@
+{{#if message}}
+<p>{{message}}</p>
+{{/if}}
+<p>Please select more than four courses. If page reloads then no new or possible schedule can be generated from that selection.</p>
+<div id="coursesAll">
+<h2>Courses To Add</h2>
+<form method = "POST" action = "/schedule/generate">
+
+    {{#each course}} 
+    <input class="form-check-input" type="checkbox" id="courses" value = "{{courseName}}"name="courses" />
+    <label class="form-check-label" for=""> {{courseName}}</label> <br>
+    {{/each}} 
+
+    <input type = "submit" name = "" class = "btn btn-primary" value = "Submit">
+</form>
+</div>
